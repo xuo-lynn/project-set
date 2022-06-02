@@ -12,17 +12,17 @@ def index():
 
 @app.route('/about')
 def about():
-    return render_template('about.html', title="About Me", url=os.getenv("URL"))
+    return render_template('about.html', title="About Me")
 
 @app.route('/experience')
 def experience():
-    return render_template('experience.html', title="Experience", url=os.getenv("URL"))
+    return render_template('experience.html', title="Experience")
 
 @app.route('/projects')
 def projects():
-    return render_template('projects.html', title="Projects", url=os.getenv("URL"))
+    return render_template('projects.html', title="Projects")
 
 @app.route('/skills')
 def skills():
-    return render_template('skills.html', title="Skills", url=os.getenv("URL"))
+    return render_template('skills.html', title="Skills")
 
