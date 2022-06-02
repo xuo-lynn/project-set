@@ -85,6 +85,7 @@ body {
     transition: color 0.2s linear;
    -webkit-transition: color 0.2s linear;
    -moz-transition: color 0.2s linear;
+    font-size:24px;
 
 }
 
@@ -97,14 +98,14 @@ body {
 }
 
 .media-content img{
-    width:35px;
-    height:35px;
+    width:42px;
+    height:42px;
 }
 
 .media-content ul{
     display:inline-flex;
     position:relative;
-    top: -4.5em;        
+    top: -5em;        
     right: 1em;
     float:right;
 }
