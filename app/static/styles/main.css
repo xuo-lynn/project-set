@@ -63,12 +63,9 @@ body {
     display: inline-block;
     position:relative;
     align-items: center;
-<<<<<<< Updated upstream
     padding-left: 3.7em;
-=======
     justify-content: left;
     padding-left: 3em;
->>>>>>> Stashed changes
 }
 
 
@@ -78,10 +75,7 @@ body {
     
 }
 
-<<<<<<< Updated upstream
-=======
 
->>>>>>> Stashed changes
 .media-content ul{
     list-style: none;
 }
