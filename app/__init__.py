@@ -18,6 +18,14 @@ def xuo():
 def chuu():
     return render_template('chuu.html', title="Kaitlyn Chau Portfolio")
 
+@app.route('/chuu/hobbies')
+def chuu():
+    return render_template('hobbies.html', title="Kaitlyn Chau's Hobbies'")
+
+@app.route('/chuu/travel')
+def chuu():
+    return render_template('travel.html', title="Kaitlyn Chau's Travel'")
+
 @app.route('/diaz')
 def diaz():
     return render_template('diaz.html', title="Daniel Diaz Portfolio")
