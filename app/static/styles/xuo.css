@@ -10,10 +10,19 @@ html, body {
     overflow-y:hidden;
   }
 
+<<<<<<< Updated upstream
 @media screen and (max-width: 1920px) and (max-height: 1080px){
     body {
         zoom:80%;
     }
+=======
+:root{
+    --text-primary:#b6b6b6;
+    --text-secondary:#ececec;
+    --bg-primary:#18181f;
+    --bg-secondary:#919191a1;
+    --transition-speed: 600ms;
+>>>>>>> Stashed changes
 }
 a{
     list-style:none;
@@ -30,3 +39,133 @@ p {
     color: #333333;
 }
 
+<<<<<<< Updated upstream
+=======
+p, h1, h2, h3, h4, h5, h6, button {
+    font-family: "Roboto", serif;
+}
+
+.navbar {
+  position: fixed;
+  background-color: var(--bg-primary);
+  transition:width 600ms ease;
+  width: 5rem;
+  height: 100vh;
+}
+
+.navbar:hover{
+  width:16em;
+}
+
+.navbar-nav {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100vh;
+}
+
+.navbar:hover .link-text{
+  display:block;
+}
+
+.nav-item {
+  width: 100%;
+}
+
+.nav-link {
+  display: flex;
+  align-items: center;
+  height: 5rem;
+  color: var(--text-primary);
+  text-decoration: none;
+  filter: grayscale(100%) opacity(0.7);
+  transition: var(--transition-speed);
+}
+
+.nav-link:hover {
+  filter: grayscale(0%) opacity(1);
+  background: var(--bg-secondary);
+  color: var(--text-secondary);
+}
+
+.link-text {
+  display: none;
+  margin-left: 1rem;
+}
+
+.nav-link svg {
+  width: 2rem;
+  min-width: 2rem;
+  margin: 0 1.5rem;
+}
+
+.fa-primary {
+  color: #fcfcfc;
+}
+
+.fa-secondary {
+  color: #6d94dd;
+}
+
+.fa-primary,
+.fa-secondary {
+  transition: var(--transition-speed);
+}
+
+.logo {
+  font-weight: bold;
+  text-transform: uppercase;
+  margin-bottom: 1rem;
+  text-align: center;
+  color: #18181f09;
+  background: rgb(78, 78, 95);
+  font-size: 1.5rem;
+  letter-spacing: 0.3ch;
+  width: 100%;
+}
+
+.logo svg{
+  transform:rotate(0deg);
+  transition:var(--transition-speed)
+}
+
+.logo-text
+{
+  display: inline;
+  position: absolute;
+  left: -999px;
+  transition: var(--transition-speed);
+}
+
+.navbar:hover .logo svg {
+  transform: rotate(-180deg);
+  margin-left: 11rem;
+}
+
+.navbar:hover .logo-text
+  {
+    left: 0px;
+  }
+
+.logo:hover svg {
+  transform: rotate(-180deg);
+  transition: 500ms ease;
+}
+
+.logo-text
+{
+  display: inline;
+  position: absolute;
+  left: -999px;
+  transition: var(--transition-speed);
+}
+
+
+
+
+  
+ 
+>>>>>>> Stashed changes
