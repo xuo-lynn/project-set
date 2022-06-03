@@ -10,19 +10,19 @@ app = Flask(__name__)
 def index():
     return render_template('index.html', title="Gorilla Gang Portfolio", url=os.getenv("URL"))
 
-@app.route('/about')
-def about():
-    return render_template('about.html', title="About Me")
+@app.route('/xuo')
+def index():
+    return render_template('xuo.html', title="Set Lynn Portfolio", url=os.getenv("URL"))
 
-@app.route('/experience')
-def experience():
-    return render_template('experience.html', title="Experience")
+@app.route('/chuu')
+def index():
+    return render_template('chuu.html', title="Kaitlyn Chau Portfolio", url=os.getenv("URL"))
 
-@app.route('/projects')
-def projects():
-    return render_template('projects.html', title="Projects")
+@app.route('/diaz')
+def index():
+    return render_template('diaz.html', title="Daniel Diaz Portfolio", url=os.getenv("URL"))
 
-@app.route('/skills')
-def skills():
-    return render_template('skills.html', title="Skills")
+
+
+
 
