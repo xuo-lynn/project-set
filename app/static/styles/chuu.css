@@ -64,20 +64,31 @@ body {
 .nav-logo img {
     width: 200px;
     padding-top:1em;
-    
+}
+
+h1{
+    font-size: 12px;
+    font-weight: 400;
+    color: #fff;
+    text-align: center;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    position:relative;
+    top:.4em;
+    left:-7em;
 }
 
 .nav-content ul{
     display:inline-flex;
     position:relative;
-    top: -.6em;
-    left: 1em;
+    top: .5em;
+    left: 7em;
 }
     
 .nav-content ul li{
     display:inline;
     padding-right:4em;
-    font-size:17px;
+    font-size:4px;
 }
 
 .nav-content ul a{
@@ -87,7 +98,6 @@ body {
    -webkit-transition: color 0.2s linear;
    -moz-transition: color 0.2s linear;
     font-size:24px;
-
 }
 
 .nav-content ul a:hover{
