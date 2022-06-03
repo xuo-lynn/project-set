@@ -11,16 +11,16 @@ def index():
     return render_template('index.html', title="Gorilla Gang Portfolio", url=os.getenv("URL"))
 
 @app.route('/xuo')
-def index():
-    return render_template('xuo.html', title="Set Lynn Portfolio", url=os.getenv("URL"))
+def xuo():
+    return render_template('xuo.html', title="Set Lynn Portfolio")
 
 @app.route('/chuu')
-def index():
-    return render_template('chuu.html', title="Kaitlyn Chau Portfolio", url=os.getenv("URL"))
+def chuu():
+    return render_template('chuu.html', title="Kaitlyn Chau Portfolio")
 
 @app.route('/diaz')
-def index():
-    return render_template('diaz.html', title="Daniel Diaz Portfolio", url=os.getenv("URL"))
+def diaz():
+    return render_template('diaz.html', title="Daniel Diaz Portfolio")
 
 
 
