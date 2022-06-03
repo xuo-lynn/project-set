@@ -1,7 +1,4 @@
-@import url(//fonts.googleapis.com/css?family=Lato:300:400);
-p, h1, h2, h3, h4, h5, h6, button {
-    font-family: "Roboto", serif;
-}
+
 
 :root{
     --text-primary:#b6b6b6;
@@ -32,6 +29,10 @@ p {
     font-size:14px;
     color: #333333;
 }
+
+p, h1, h2, h3, h4, h5, h6, button {
+    font-family: "Roboto", serif;
+
 
 .navbar {
   position: fixed;

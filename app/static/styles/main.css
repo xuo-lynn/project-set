@@ -1,3 +1,4 @@
+
 p, h1, h2, h3, h4, h5, h6, button {
     font-family: "Roboto", serif;
 }
@@ -62,8 +63,9 @@ body {
     display: inline-block;
     position:relative;
     align-items: center;
+    padding-left: 3.7em;
     justify-content: left;
-    padding-left: 1em;
+    padding-left: 3em;
 }
 
 
@@ -73,33 +75,6 @@ body {
     
 }
 
-.nav-content ul{
-    display:inline-flex;
-    position:relative;
-    top: -.6em;
-    left: 1em;
-}
-    
-.nav-content ul li{
-    display:inline;
-    padding-right:4em;
-    font-size:20px;
-    opacity:.8;
-}
-
-.nav-content ul a{
-    color:#fff; 
-    text-decoration: none;
-    transition: color 0.2s linear;
-   -webkit-transition: color 0.2s linear;
-   -moz-transition: color 0.2s linear;
-    font-size:24px;
-
-}
-
-.nav-content ul a:hover{
-    color:rgba(197, 197, 197, 0.42);
-}
 
 .media-content ul{
     list-style: none;
@@ -114,13 +89,13 @@ body {
     display:inline-flex;
     position:relative;
     top: -6em;        
-    right: 1em;
+    right: 3em;
     float:right;
 }
 
 .media-content ul li{
-    display:inline;
-    padding-right:1.2em;
+    padding-top: 1em;
+    padding-right:2em;
     transition: opacity 0.2s linear;
    -webkit-transition: opacity 0.2s linear;
    -moz-transition: opacity 0.2s linear;
