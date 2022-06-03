@@ -19,11 +19,11 @@ def chuu():
     return render_template('chuu.html', title="Kaitlyn Chau Portfolio")
 
 @app.route('/chuu/hobbies')
-def chuu():
+def hobbies():
     return render_template('hobbies.html', title="Kaitlyn Chau's Hobbies'")
 
 @app.route('/chuu/travel')
-def chuu():
+def travel():
     return render_template('travel.html', title="Kaitlyn Chau's Travel'")
 
 @app.route('/diaz')
