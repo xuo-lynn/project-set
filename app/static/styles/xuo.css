@@ -22,7 +22,7 @@ body {
     font-family: 'Lato', sans-serif;
     margin: 0px;
     min-height: 100vh;
-    background: linear-gradient(-55deg, #fff, #bb8d49, #374480, #a5567d);
+    background: linear-gradient(-55deg, #fff, #53b86c, #374480, #a5567d);
     background-size: 400% 400%;
     animation: gradient 9s ease infinite;
 }
@@ -188,20 +188,39 @@ p, h1, h2, h3, h4, h5, h6, button {
 
 .about-card{
     width:100%;
+    height:500px;
     max-width:900px;
-    color:white;
+    color:black;
     text-align: center;
     border:1px solid rgba(255,255,255,0.3);
-    background:rgba(255,255,255,0.2);
+    background:white;
     border-radius:16px;
     box-shadow:0 4px 30px rgba(0,0,0,0.1);
-    backdrop-filter:blur(5px);
+    position:relative;
+    bottom:-5em;
+    overflow: hidden;
+    transform: translatey(0);
+    opacity:.5;
+    animation:float 2s ease-in-out infinite;
 }
 
-.about-card .p{
-  text-align: center;
-}
 
+@keyframes float{
+  0%{
+    box-shadow: 0px 5px 15px 0px rgba(0,0,0,0.6);
+    transform:translatey(0);
+  }
+
+  50%{
+    box-shadow: 0px 25px 15px 0px rgba(0,0,0,0.2);
+    transform:translatey(-20);
+  }
+
+  100%{
+    box-shadow: 0px 5px 15px 0px rgba(0,0,0,0.6);
+    transform:translatey(0);
+  }
+}
 
 
 
