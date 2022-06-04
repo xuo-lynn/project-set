@@ -104,6 +104,16 @@ h1{
     color:rgba(197, 197, 197, 0.42);
 }
 
+.navbar-fixed-top.scrolled {
+    background-color: #EDDECB !important;
+    transition: background-color 200ms linear;
+  }
+
+/* about section image css */
+.imageAboutPage {
+    width: 100%;
+}
+
 .media-content ul{
     list-style: none;
 }
