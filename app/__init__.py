@@ -20,7 +20,7 @@ def chuu():
 
 @app.route('/chuu/hobbies')
 def chuu_hobbies():
-    return render_template('chuu_hobbies.html', title="Kaitlyn Chau's Hobbies'")
+    return render_template('chuu_hobbies.html', title="Kaitlyn Chau's Hobbies")
 
 @app.route('/chuu/travel')
 def chuu_travel():
