@@ -41,8 +41,6 @@ body {
 p {
     font-family: 'Lato', sans-serif;
     letter-spacing: 1px;
-    font-size:14px;
-    color: #333333;
 }
 
 
@@ -211,7 +209,7 @@ p, h1, h2, h3, h4, h5, h6, button {
   display:flex;
   position:relative;
   align-items: center;
-  top:-6em;
+  top:-11em;
   right:-3em;
   justify-content: space-around;
   width:100%;
@@ -224,6 +222,7 @@ p, h1, h2, h3, h4, h5, h6, button {
     height:450px;
     text-align: center;
     border:1px solid rgba(255, 255, 255, 0.548);
+    color:white;
     border-radius:16px;
     box-shadow:0 4px 30px rgba(0,0,0,0.1);
     position:relative;
@@ -233,6 +232,12 @@ p, h1, h2, h3, h4, h5, h6, button {
     animation:float 2s ease-in-out infinite;
     background:black;
     
+}
+
+#hobbies .card svg{
+  width: 9rem;
+  min-width: 2rem;
+  padding-top:3rem;
 }
 
 
