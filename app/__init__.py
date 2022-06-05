@@ -14,6 +14,10 @@ def index():
 def xuo():
     return render_template('xuo.html', title="Set Lynn Portfolio")
 
+@app.route('/xuo/hobbies')
+def xuo_hobbies():
+    return render_template('xuo_hobbies.html', title="Set Lynn Hobbies")
+
 @app.route('/chuu')
 def chuu():
     return render_template('chuu.html', title="Kaitlyn Chau Portfolio")
