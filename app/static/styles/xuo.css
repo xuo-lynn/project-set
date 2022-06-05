@@ -1,4 +1,16 @@
 
+::-webkit-scrollbar{
+  width:6px;
+}
+
+::-webkit-scrollbar-track{
+  background:#4c468a
+}
+
+::-webkit-scrollbar-thumb{
+  background:rgb(255, 253, 253);
+  border-radius:20px;
+}
 
 :root{
     --text-primary:#b6b6b6;
@@ -480,6 +492,8 @@ p, h1, h2, h3, h4, h5, h6, button {
     transform:translatey(0);
   }
 }
+
+
 
 @media
 only screen and (-webkit-min-device-pixel-ratio: 2) and ( max-width: 2000px),
