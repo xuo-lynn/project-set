@@ -267,7 +267,7 @@ p, h1, h2, h3, h4, h5, h6, button {
     top:-37rem;
     right:-60em;
     transform: translatey(0);
-    opacity:.75;
+    
     animation:float 2s ease-in-out infinite;
     background:rgb(235, 183, 230);
     word-break:break-word;
