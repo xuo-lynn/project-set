@@ -231,6 +231,7 @@ p, h1, h2, h3, h4, h5, h6, button {
     opacity:.5;
     animation:float 2s ease-in-out infinite;
     background:black;
+    word-break:break-word;
     
 }
 
@@ -240,6 +241,22 @@ p, h1, h2, h3, h4, h5, h6, button {
   padding-top:3rem;
 }
 
+#hobbies .card h1{
+  padding-top:2rem;
+}
+
+#hobbies .card p{
+  padding: 0rem 1rem 0rem 1rem;
+}
+
+#hobbies .card h2{
+  padding-top:3.5rem;
+}
+
+#hobbies .card h3{
+  font-size:23px;
+  padding-top:1.75rem;
+}
 
 @keyframes float{
   0%{
