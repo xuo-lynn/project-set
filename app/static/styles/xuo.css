@@ -481,6 +481,47 @@ p, h1, h2, h3, h4, h5, h6, button {
   }
 }
 
+@media screen 
+  and (min-device-width: 1200px) 
+  and (max-device-width: 1600px) 
+  and (-webkit-min-device-pixel-ratio: 1) { 
+    body{
+      zoom:80%;
+    }
+
+    .navbar{
+      height:2000px;
+    }
+
+    #experience .container{
+      bottom:-4em;
+    }
+
+    #hobbies{
+      height:1000px;
+    }
+    
+    #hobbies .container{
+      top:-10em;
+    }
+
+    #education h1{
+      bottom:-3rem;
+    }
+
+    #experience .card{
+      top:-32rem;
+    }
+
+    #experience img{
+      bottom:-5rem;
+    }
+
+    #experience h1{
+      bottom:-5rem;
+    }
+}
+
 @media
 only screen and (-webkit-min-device-pixel-ratio: 2) and ( max-width: 2000px),
 only screen and (   min--moz-device-pixel-ratio: 2) and ( max-width: 2000px),
