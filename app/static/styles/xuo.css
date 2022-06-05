@@ -323,23 +323,7 @@ p, h1, h2, h3, h4, h5, h6, button {
   animation:float 2s ease-in-out infinite;
 }
 
-#education .card_uni{
-  width:500px;
-  height:300px;
-  text-align: center;
-  border:1px solid rgba(63, 61, 61, 0.548);
-  color:black;
-  border-radius:16px;
-  box-shadow:0 4px 30px rgb(255, 255, 255);
-  position:relative;
-  top:-38.2rem;
-  right:-80rem;
-  transform: translatey(0);
-  opacity:.75;
-  animation:float 2s ease-in-out infinite;
-  background:rgb(255, 255, 255);
-  word-break:break-word;
-}
+
 
 #education .card_uni{
   width:500px;
@@ -349,6 +333,8 @@ p, h1, h2, h3, h4, h5, h6, button {
   color:rgb(255, 255, 255);
   border-radius:16px;
   box-shadow:0 4px 30px rgb(255, 255, 255);
+  top:-38.2rem;
+  right:-80rem;
   position:relative;
   transform: translatey(0);
   opacity:.75;
@@ -385,6 +371,7 @@ p, h1, h2, h3, h4, h5, h6, button {
   position:relative;
   right:-8em; 
 }
+
 
 #education h5{
   font-size:18px;
