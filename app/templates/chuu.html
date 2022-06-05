@@ -26,75 +26,7 @@
 
 <body>
 
-    <!-- navigation bar-->
-    <nav class="navbar navbar-expand-lg fixed-top navbarScroll">
-        <div class="container">
-            <a href="/">
-                <div class="nav-logo">
-                    <img src="./static/img/logo.svg" />
-                </div>
-            </a>
-            <h1>Kaitlyn Chau</h1>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="nav-content">
-                <ul class="nav-content">
-                    <li class="nav-item">
-                        <a class="nav-link" href="/chuu/about">About</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="/chuu/education">Education</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="/chuu/experience">Experience</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="/chuu/hobbies">Hobbies</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="/chuu/travel">Travel</a>
-                    </li>
-                </ul>
-                
-            </div>
-        </div>
-    </nav>
-
-<!-- about section-->
-<section id="about">
-    <div class="container mt-4 pt-4">
-        <h1 class="text-center">About Me</h1>
-        <div class="row mt-4">
-            <div class="col-lg-4">
-                <img src="/static/img/chuu.jpg" class= "imageAboutPage" alt="">
-            </div>
-
-            <div class="col-lg-8">
-                <p> words
-                    words
-                    words
-                    words
-                    
-                </p>
-                <div class="row mt-3">
-                    <div class="col-md-6">
-                        <ul>
-                            <li>bullet</li>
-                            <li>bullet</li>
-                            <li>bullet</li>
-
-                        </ul>
-                    </div>
-                </div>
-                <div class="row mt-3">
-                    <p> something something
-                        something something
-                    </p>
-                </div>
-            </div>
-        </div>
-</section>
+    {% include 'navbar.html' %}
 
 <!-- about section-->
 <section id="about">

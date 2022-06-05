@@ -28,7 +28,11 @@ def chuu_travel():
 
 @app.route('/chuu/experience')
 def chuu_experience():
-    return render_template('chuu_experience.html')
+    return render_template('chuu_experience.html', title="Kaytlyn's Experience")
+
+@app.route('/chuu/education')
+def chuu_education():
+    return render_template('chuu_education.html', title="Kaitlyn's Education")
 
 @app.route('/diaz')
 def diaz():
