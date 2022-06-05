@@ -9,11 +9,41 @@ html, body {
     overflow-y: hidden;
   }
 
-.carousel{
-    scroll-snap-type:x mandatory;
-    scroll-padding: 0 24px;
+*{
+    box-sizing: border-box;
+    margin:0;
+    padding:0;
 }
 
-.carousel .hobby{
+body{
+    overflow-y: hidden;
+}
+
+.container{
+    scroll-snap-type: x mandatory;
+    display:flex;
+    -webkit-overflow-scrolling: touch;
+    overflow-x: auto;
+}
+
+.child{
     scroll-snap-align: start;
+    border-right:1px solid white;
+    padding:1rem;
+    text-align:center;
+    position:relative;
+    min-width: 100vw;
+    height:100vh;
+}
+
+.bg-1{
+    background-color: #f7f7f7;
+}
+
+.bg-1{
+    background-color: red;
+}
+
+.bg-1{
+    background-color: blue;
 }
