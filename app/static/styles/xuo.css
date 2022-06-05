@@ -206,13 +206,17 @@ p, h1, h2, h3, h4, h5, h6, button {
 #about .links{
   padding-top:1em;
 }
+
+
 #about .links img{
   width:60px;
-  padding:.5em;
+  padding:1.5em;
   transition: opacity 0.2s linear;
  -webkit-transition: opacity 0.2s linear;
  -moz-transition: opacity 0.2s linear;
 }
+
+
 
 #about .links img:hover{
   opacity:.4;
@@ -240,7 +244,6 @@ p, h1, h2, h3, h4, h5, h6, button {
   position:relative;
   right:-13em;
   padding-bottom:1rem;
-  opacity:.7;
 }
 
 #experience .project_img{
@@ -266,13 +269,15 @@ p, h1, h2, h3, h4, h5, h6, button {
     transform: translatey(0);
     opacity:.75;
     animation:float 2s ease-in-out infinite;
-    background:rgb(88 101 242);
+    background:rgb(235, 183, 230);
     word-break:break-word;
 }
 
 #experience .card svg{
+  position:relative;
+  right:-1.4rem;
   padding-top:4rem;
-  width: 9rem;
+  width: 12rem;
 }
 
 #experience .card h2,p{
@@ -280,9 +285,13 @@ p, h1, h2, h3, h4, h5, h6, button {
   color:white;
 }
 
+#experience .card h2{
+  bottom:-2rem;
+}
+
 #experience .card p{
   font-weight:500;
-  bottom:-2.45rem;
+  bottom:-1rem;
   padding: 0rem .2rem 0rem .2rem;
 }
 
@@ -290,8 +299,95 @@ p, h1, h2, h3, h4, h5, h6, button {
   height:980px;
   display:flex;
   align-items: center;
-  background:grey;
   position:relative;
+}
+
+#education .container{
+  position:relative;
+  height:70%;
+  top:-7rem;
+
+}
+
+#education svg{
+  fill:black;
+}
+
+#education .map{
+  width:69%;
+  border-radius: 16px;
+  position: relative;
+  right:-15rem;
+  bottom:-2.9rem;
+  transform: translatey(0);
+  animation:float 2s ease-in-out infinite;
+}
+
+#education .card_uni{
+  width:500px;
+  height:300px;
+  text-align: center;
+  border:1px solid rgba(63, 61, 61, 0.548);
+  color:black;
+  border-radius:16px;
+  box-shadow:0 4px 30px rgb(255, 255, 255);
+  position:relative;
+  top:-38.2rem;
+  right:-80rem;
+  transform: translatey(0);
+  opacity:.75;
+  animation:float 2s ease-in-out infinite;
+  background:rgb(255, 255, 255);
+  word-break:break-word;
+}
+
+#education .card_uni{
+  width:500px;
+  height:300px;
+  text-align: center;
+  border:1px solid rgba(63, 61, 61, 0.548);
+  color:rgb(255, 255, 255);
+  border-radius:16px;
+  box-shadow:0 4px 30px rgb(255, 255, 255);
+  position:relative;
+  transform: translatey(0);
+  opacity:.75;
+  animation:float 2s ease-in-out infinite;
+  background:rgb(0, 0, 0);
+  word-break:break-word;
+}
+
+#education .card_hs{
+  width:500px;
+  height:300px;
+  text-align: center;
+  border:1px solid rgba(63, 61, 61, 0.548);
+  color:rgb(255, 255, 255);
+  border-radius:16px;
+  box-shadow:0 4px 30px rgb(255, 255, 255);
+  position:relative;
+  top:-35rem;
+  right:-80rem;
+  transform: translatey(0);
+  opacity:.75;
+  animation:float 2s ease-in-out infinite;
+  background:rgb(0, 0, 0);
+  word-break:break-word;
+}
+
+#education svg{
+  width:9rem;
+}
+
+#education h1{
+  font-size:40px;
+  width:75%;
+  position:relative;
+  right:-8em; 
+}
+
+#education h5{
+  font-size:18px;
 }
 
 #hobbies{
@@ -306,7 +402,7 @@ p, h1, h2, h3, h4, h5, h6, button {
   display:flex;
   position:relative;
   align-items: center;
-  top:-11em;
+  top:-7em;
   right:-3em;
   justify-content: space-around;
   width:100%;
@@ -332,13 +428,20 @@ p, h1, h2, h3, h4, h5, h6, button {
     
 }
 
+#hobbies h1{
+  position:relative;
+  bottom:-3rem;
+  font-size:70px;
+  width:200px;
+}
+
 #hobbies .card svg{
   width: 9rem;
   min-width: 2rem;
   padding-top:3rem;
 }
 
-#hobbies .card h1{
+#hobbies .card h2{
   padding-top:2rem;
 }
 
@@ -346,13 +449,16 @@ p, h1, h2, h3, h4, h5, h6, button {
   padding: 0rem 1rem 0rem 1rem;
 }
 
-#hobbies .card h2{
+#hobbies .card h3{
   padding-top:3.5rem;
+  font-size:23px;
 }
 
-#hobbies .card h3{
+#hobbies .card h4{
+  position:relative;
+  bottom:-1.2rem;
   font-size:23px;
-  padding-top:1.75rem;
+  padding-bottom:.5rem;
 }
 
 @keyframes float{
