@@ -1,44 +1,42 @@
 
+# Production Engineering - Week 1 - Portfolio Site
+
 ## Gorilla Gang Portfolio Site
 
 Team members Daniel Diaz, Kaitlyn Chau, and Set Lynn created a portfolio website that feature different personalities.
 
 
-# Production Engineering - Week 1 - Portfolio Site
+## Inspiration
+We wanted to have a single place where we could put any teammates we are working with on a common project, so it can be a reference website of the creators behind that project!
 
-Welcome to the MLH Fellowship! During Week 1, you'll be working with Flask to build a portfolio site. This site will be the foundation for activities we do in future weeks so spend time this week making it your own and reflect your personality!
+## What it does
+It is a single website where we can explore all of a project's developers portfolios.
 
-## Tasks
+## How we built it
+Using Flask and Jinja for the server, routing and templates reutilization and the web development common parts: HTML, Javascript and CSS.
 
-Once you've got your portfolio downloaded and running using the instructions below, you should attempt to complete the following tasks.
+## Challenges we ran into
+Designing a first mock.
+Defining the scope.
+Working as a team.
+We were new to Flask and Jinja.
 
-For each of these tasks, you should create an [Issue](https://docs.github.com/en/issues/tracking-your-work-with-issues/about-issues) and work on them in a new [branch](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/about-branches). When the task has been completed, you should open a [Pull Request](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/about-pull-requests) and get another fellow in your pod to give you feedback before merging it in.
+## Accomplishments that we're proud of
+-Familiarize with basic Flask rapidly.
+-Using Jinja template for NavBar.
+-Using Google Maps API.
+-Extra work: second website tab (Set's effort).
+-Slideshow on Hobbies section.
 
-*Note: Make sure to include a link to the Issue you're working on inside of your Pull Request so your reviewer knows what you're working on!*
+## What we learned
+-Basic Flask and Jinja.
+-Set up a virtual environment in Python.
+-Git flow control: creating branches and doing pull requests.
 
-### GitHub Tasks
-- [x] Create Issues for each task below
-- [x] Work on each task in a new branch
-- [x] Open a Pull Request when a task is finished to get feedback
+## What's next for Gorilla Gang Portfolios
+-Implement Jinja templates for "Education", "Experience" and "Hobbies" sections.
+-Use the Jinja templates and replicate another website (Daniel's).
 
-### Portfolio Tasks
-- [x] Add a photo of yourself to the website
-- [x] Add an "About youself" section to the website.
-- [x] Add your previous work experiences
-- [x] Add your hobbies (including images)
-- [x] Add your current/previous education
-- [x] Add a map of all the cool locations/countries you visited
-
-### Flask Tasks
-- [x] Get your Flask app running locally on your machine using the instructions below.
-- [x] Add a template for adding multiple work experiences/education/hobbies using [Jinja](https://jinja.palletsprojects.com/en/3.0.x/api/#basics)
-- [x] Create a new page to display hobbies.
-- [x] Add a menu bar that dynamically displays other pages in the app
-
-
-## Getting Started
-
-You don't need to submit any pull requests to the repository. You need to do all your work here.
 
 ## Installation
 
@@ -74,12 +72,4 @@ You should get a response like this in the terminal:
  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
 ```
 
-You'll now be able to access the website at `localhost:5000` or `127.0.0.1:5000` in the browser! 
-
-*Note: The portfolio site will only work on your local machine while you have it running inside of your terminal. We'll go through how to host it in the cloud in the next few weeks!* 
-
-## Contributing
-
-Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
-
-Please make sure to update tests as appropriate.
+You'll now be able to access the website at `localhost:5000` or `127.0.0.1:5000` in the browser!
