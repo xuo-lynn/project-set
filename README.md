@@ -1,3 +1,9 @@
+
+## Gorilla Gang Portfolio Site
+
+Team members Daniel Diaz, Kaitlyn Chau, and Set Lynn created a portfolio website that feature different personalities.
+
+
 # Production Engineering - Week 1 - Portfolio Site
 
 Welcome to the MLH Fellowship! During Week 1, you'll be working with Flask to build a portfolio site. This site will be the foundation for activities we do in future weeks so spend time this week making it your own and reflect your personality!
