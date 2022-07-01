@@ -99,7 +99,7 @@
       display:flex;
       justify-content: center;
       align-items: center;
-      padding-top:3rem;
+      padding-top:3 rem;
     }
   .container{
      width:1200px;
@@ -114,4 +114,8 @@
       opacity:.7;
       background:black;
       animation:float 2s ease-in-out infinite;
+  }
+
+  .info{
+    background:black;
   }

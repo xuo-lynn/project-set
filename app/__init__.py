@@ -35,9 +35,9 @@ mydb.create_tables([TimelinePost])
 def index():
     return render_template('index.html', title="Set's Portfolio", url=os.getenv("URL"))
 
-@app.route('/messages')
+@app.route('/timeline', methods=['GET', 'POST'])
 def messages():
-    return render_template('message.html', title="Messages")
+    return render_template('timeline.html', title="Timeline")
 
 @app.route('/api/timeline_post', methods = ['POST'])
 def post_time_line_post():

@@ -23,7 +23,32 @@
 <body>  
    <div class = "section">
     <div class="container">
-        <h1>Leave a Message</h1>
+        <h1>Message Board</h1>
+        <form id= "form">
+            <input name="name" placeholder="Enter your name">
+            <input name="email" placeholder="Enter your email">
+            <input name="content" placeholder="Enter your message">
+            <button type="Submit">Submit</button>
+        </form>
     </div>
    </div>
+   <script>
+        const form = document.getElementById('form');
+
+        form.addEventListener('submit',function(e){
+            e.preventDefault();
+            const payload = new FormData(form);
+
+            console.log([...payload]);
+
+            fetch('/api/timeline_post',{
+                method: 'POST',
+                body: payload
+            }).then(function(response){
+                return response.json();
+            }).then(function(data){
+                console.log(data);
+            });
+        })
+   </script>
 </body>
