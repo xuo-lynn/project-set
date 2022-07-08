@@ -30,9 +30,19 @@
             <input name="content" placeholder="Enter your message">
             <button type="Submit">Submit</button>
         </form>
+
+        <div class="d-flex justify-content-center">
+            <div class="spinner-border" 
+                 role="status" id="loading">
+                <span class="sr-only">Loading...</span>
+            </div>
+        </div>
+        <h1>Message Board</h1>
+        <table id="messages"></table>
     </div>
    </div>
    <script>
+
         const form = document.getElementById('form');
 
         form.addEventListener('submit',function(e){
@@ -50,5 +60,49 @@
                 console.log(data);
             });
         })
+
+        api_url= '/api/timeline_get';
+
+        async function getapi(url){
+            const response = await fetch(url);
+
+            var data = await response.json();
+            console.log(data);
+            
+            if(response){
+                hideloader();
+            }
+            
+            show(data);
+        }
+
+        getapi(api_url);
+
+        function hideloader(){
+            document.getElementById('loading').style.display = 'none';
+        }
+
+        function show(data){
+            let tab = 
+            '<tr>' +
+                '<th>Name</th>' +
+                '<th>Email</th>' +
+                '<th>Message</th>' +
+            '</tr>';
+        }
+
+        for (let r of data.list){
+            tab += 
+            '<tr>' +
+                '<td>' + r.name + '</td>' +
+                '<td>' + r.email + '</td>' +
+                '<td>' + r.content + '</td>' +
+            '</tr>';
+        }
+
+        document.getElementById('messages').innerHTML = tab;
+
+
+
    </script>
 </body>
