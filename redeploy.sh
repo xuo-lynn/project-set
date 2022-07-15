@@ -1,6 +1,4 @@
 #!/bin/bash/env bash
 git fetch && git reset origin/main --hard
-python -m venv python3-virtualenv
-source python3-virtualenv/bin/activate
-pip3 install -r requirements.txt
-flask run --host=0.0.0.0
+docker compose -f docker-compose.prod.yml down
+docker-compose -f docker-compose.prod.yml up -d --build
