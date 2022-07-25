@@ -4,7 +4,7 @@ from flask import Flask, render_template, request
 from dotenv import load_dotenv
 from peewee import *
 from playhouse.shortcuts import model_to_dict
-
+import re 
 
 
 load_dotenv()
@@ -35,28 +35,55 @@ mydb.create_tables([TimelinePost])
 def index():
     return render_template('index.html', title="Set's Portfolio", url=os.getenv("URL"))
 
-@app.route('/messages')
-def messages():
-    return render_template('message.html', title="Messages")
+@app.route('/timeline')
+def timeline():
+    all_posts = get_time_line_post()
+    return render_template('timeline.html', title="Timeline", all_posts=all_posts)
 
-@app.route('/api/timeline_post', methods = ['POST'])
+# Adds a timeline post
+@app.route('/api/timeline_post', methods=['POST'])
 def post_time_line_post():
-    name = request.form['name']
-    email = request.form['email']
-    content = request.form['content']
+    name = request.form.get('name')
+    email = request.form.get('email')
+    content = request.form.get('content')
+
+    # Adding regex pattern for email validation
+    # pattern = re.compile(r'([A-Za-z0-9]+[.-_])*[A-Za-z0-9]+@[A-Za-z0-9-]+(\.[A-Z|a-z]{2,})+')
+    pattern = '([A-Za-z0-9]+[.-_])*[A-Za-z0-9]+@[A-Za-z0-9-]+(\.[A-Z|a-z]{2,})+'
+
+    if name == None:
+        return "Invalid name", 400
+    elif content == None or content == "":
+        return "Invalid content", 400
+    elif not (re.search(pattern, email)):
+        return "Invalid email", 400
+
+
     timeline_post = TimelinePost.create(name=name, email=email, content=content)
     return model_to_dict(timeline_post)
 
-@app.route('/api/timeline_post', methods = ['GET'])
+# Gets a timeline post
+@app.route('/api/timeline_post', methods=['GET'])
 def get_time_line_post():
-    return{
-        'timeline_posts':[
+    return {
+        'timeline_posts': [
             model_to_dict(p)
             for p in 
 TimelinePost.select().order_by(TimelinePost.created_at.desc())
         ]
     }
 
+# Deletes a timeline post
+@app.route('/api/timeline_post', methods=["DELETE"])
+def delete_time_line_post():
+    sql = TimelinePost.delete()
+    sql.execute
+    return {
+        'timeline_posts': [
+            model_to_dict(p)
+            for p in TimelinePost.select().order_by(TimelinePost.created_at.desc())
+        ]
+    }
 
 
 
