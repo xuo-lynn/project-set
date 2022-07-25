@@ -27,7 +27,7 @@ jobs:
       - name: Install Dependencies
         run: python3-virtualenv/bin/pip install -r requirements.txt
 
-      -name: change perms 
+      - name: change perms 
         run: chmod +x run_test.sh
       
       - name: Run Tests
