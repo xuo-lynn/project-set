@@ -47,8 +47,7 @@ def post_time_line_post():
     email = request.form.get('email')
     content = request.form.get('content')
 
-    # Adding regex pattern for email validation
-    # pattern = re.compile(r'([A-Za-z0-9]+[.-_])*[A-Za-z0-9]+@[A-Za-z0-9-]+(\.[A-Z|a-z]{2,})+')
+
     pattern = '([A-Za-z0-9]+[.-_])*[A-Za-z0-9]+@[A-Za-z0-9-]+(\.[A-Z|a-z]{2,})+'
 
     if name == None:
