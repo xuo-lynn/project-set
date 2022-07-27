@@ -53,7 +53,7 @@
                 const post = new URLSearchParams(pre_post);
                 
                 console.log([...post]);
-                fetch('http://127.0.0.1:5000/api/timeline_post', {
+                fetch('https://xuo-lynn.duckdns.org/api/timeline_post', {
                     method: "POST",
                     body: post,
                 })
